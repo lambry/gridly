@@ -1,0 +1,13 @@
+.gridly {
+	> .block-editor-inner-blocks > .block-editor-block-list__layout {
+		display: grid;
+		gap: var(--gridly-grid-gap, 10px);
+		grid-template-columns: repeat(auto-fit, minmax(var(--gridly-col-width, 260px), 1fr));
+		align-items: var(--gridly-align-items, 'start');
+
+		> .wp-block {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}
